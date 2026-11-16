@@ -165,12 +165,13 @@ footer{padding:22px max(5vw,16px);font-size:14px;color:var(--mute);text-align:ce
 <section class="band contact" id="contact"><div class="wrap">
  <div><h2>Let's talk research</h2><p>I'm open to collaborations and conversations about rubber additives, emerging contaminants, wastewater-based epidemiology and water quality.</p></div>
  <div class="links">
-  <a href="mailto:asif.mahmud@univ-poitiers.fr">Email<span>asif.mahmud@univ-poitiers.fr</span></a>
+  <a href="mailto:asif.mahmud@univ-poitiers.fr">University email<span>asif.mahmud@univ-poitiers.fr</span></a>
+  <a href="mailto:asif16ku@gmail.com">Personal email<span>asif16ku@gmail.com</span></a>
   <a href="https://scholar.google.com/citations?user=Tj9fo3UAAAAJ&amp;hl=en">Google Scholar<span>Publications &amp; citations</span></a>
   <a href="https://www.researchgate.net/profile/Asif-Mahmud-15">ResearchGate<span>Papers &amp; full texts</span></a>
   <a href="https://www.linkedin.com/in/asifmahmud-researcher/">LinkedIn<span>linkedin.com/in/asifmahmud-researcher</span></a>
   <div class="addr">Address<span>Doctorant en traitement des eaux<br>Institut de Chimie des Milieux et des Matériaux de Poitiers (IC2MP – UMR 7285)<br>Équipe E-BICOM, Bâtiment B1, Université de Poitiers</span></div>
-  <div>Languages<span>English: IELTS 6.5 · Duolingo 125/160</span></div>
+  <div>Languages<span>English (fluent) · French (elementary) · Bangla (native)</span></div>
  </div>
 </div></section>
 <footer>© 2026 Asif Mahmud</footer>
@@ -208,19 +209,19 @@ const topics=[
  {i:"drop",t:"Water quality & trace elements",d:"Water quality indices, GIS mapping, arsenic in treatment sludge and manganese in seawater, from Bangladesh to Norway."}];
 document.getElementById("topics").innerHTML=topics.map(t=>`<div class="topic">${ic[t.i]}<h3>${t.t}</h3><p>${t.d}</p></div>`).join("");
 
-const st=[["4","journal articles"],["5","conference abstracts"],["5","countries of study and research"],["1st","place poster award, ICEES 2022"]];
+const st=[["4","journal articles"],["5","conference abstracts"],["5","countries of study and research"]];
 document.getElementById("stats").innerHTML=st.map(s=>`<div><strong>${s[0]}</strong>${s[1]}</div>`).join("");
 
 const me=s=>s.replace(/Mahmud, A\./g,"<b>Mahmud, A.</b>");
 const pubs=[
- {y:2026,t:"Urban sewer sediments enable retrospective wastewater-based epidemiology",a:"Thiebault, T., Wurtzer, S., Mahmud, A., Alliot, F., Bernier-Turpin, G., Asselin, C., Le Callonnec, L., Le Milbeau, C., Moulin, L., & Jacob, J.",v:"Environmental Science & Technology Letters",k:"Article"},
+ {y:2026,t:"Urban sewer sediments as a potential matrix for retrospective wastewater-based epidemiology",a:"Thiebault, T., Wurtzer, S., Mahmud, A., Alliot, F., Bernier-Turpin, G., Asselin, C., Le Callonnec, L., Le Milbeau, C., Moulin, L., & Jacob, J.",v:"Water Research X",k:"Article"},
  {y:2022,t:"Are the vegetables grown in the soil of municipal solid waste dumping sites safe for human health? An assessment from trace elements contamination and associated health risks",a:"Halder, M., Rahman, T., Mahmud, A., Jim, S. A., Akbor, M. A., Siddique, M. A. B., & Joardar, J. C.",v:"Environmental Nanotechnology, Monitoring & Management, 18, 100731",k:"Article"},
  {y:2021,t:"Influence of municipal solid waste compost on yield of tomato, applied solely and in combination with inorganic fertilizer where nitrogen is the only variable factor",a:"Salam, A. A., Ashrafuzzaman, M., Sikder, S., Mahmud, A., & Joardar, J. C.",v:"Malaysian Journal of Sustainable Agriculture, 5(1), 29–33",k:"Article"},
  {y:2020,t:"Assessment of groundwater quality in Khulna city of Bangladesh in terms of water quality index for drinking purpose",a:"Mahmud, A., Sikder, S., & Joardar, J. C.",v:"Applied Water Science, 10(11), 1–14",k:"Article"},
  {y:2026,t:"Potential of settling basins to record quantitative information about public health: History of Paris since 2018",a:"Thiebault, T., Mahmud, A., Wurtzer, S., Le Milbeau, C., Alliot, F., Le Callonnec, L., Moulin, L., & Jacob, J.",v:"SETAC Europe 36th Annual Meeting",k:"Conference"},
  {y:2025,t:"Removal of pharmaceuticals, consumer products and pesticides in a wastewater treatment plant in southern Madrid: A case study",a:"González-Gaya, B., Mahmud, A., Kalman, J., Dorado, I., & Valcárcel, Y.",v:"ICRAPHE 2025, Aveiro, Portugal",k:"Conference"},
- {y:2022,t:"Geospatial mapping approach and determination of the water quality index (WQI) for irrigation purposes in Dacope Upazila, Khulna, Bangladesh",a:"Mahmud, A., Arobe, S., Biswas, S., & Joardar, J. C.",v:"ICEES 2022, Bangladesh · First-place poster",k:"Conference"},
- {y:2022,t:"Eco-friendly disposal of arsenic-containing sludge (JaPani) used for water treatment plant",a:"Joardar, J. C., Zaman, S. S., Mahmud, A., & Arobe, S.",v:"ICEES 2022, Bangladesh",k:"Conference"},
+ {y:2022,t:"Geospatial mapping approach and determination of the water quality index (WQI) for irrigation purposes in Dacope Upazila, Khulna, Bangladesh",a:"Mahmud, A., Arobe, S., Biswas, S., & Joardar, J. C.",v:"Bilateral International Conference on Ecotoxicology and Environmental Sciences (ICEES 2022), Bangladesh · First-place poster",k:"Conference"},
+ {y:2022,t:"Eco-friendly disposal of arsenic-containing sludge (JaPani) used for water treatment plant",a:"Joardar, J. C., Zaman, S. S., Mahmud, A., & Arobe, S.",v:"Bilateral International Conference on Ecotoxicology and Environmental Sciences (ICEES 2022), Bangladesh",k:"Conference"},
  {y:2020,t:"Assessment of drinking water quality in terms of water quality index based on GIS in Khulna city, Bangladesh",a:"Mahmud, A., Sikder, S., & Joardar, J. C.",v:"ICRAC 2020, Bangladesh",k:"Conference"}];
 const kinds=[["All","All"],["Article","Journal articles"],["Conference","Conference abstracts"]];let kind="All";
 const f=document.getElementById("filters"),q=document.getElementById("q"),list=document.getElementById("publist");
@@ -245,9 +246,9 @@ const sk=[
  ["Analytical & laboratory","PLE · UAE · SPE · UHPLC-Q-Orbitrap · LC-MS/MS · GC-MS · AAS · FIA-CL · Digital RT-PCR · DNA extraction · SDS-PAGE · Western blotting · Bradford assay · Immunoassays"],
  ["Data analysis & modelling","Water Quality Index · EC50 / LC50 · Dose-response modelling · Ecotoxicological interpretation · Predictive modelling · Remote sensing · Satellite image analysis"],
  ["Statistics & machine learning","GLM · PCA · ANOVA · Regression · Random Forest · Neural networks"],
- ["Software","RStudio · ArcGIS · Google Earth Engine · OriginLab · The Unscrambler · IUCLID · CHESAR · EPISuite · AlphaFold"]];
+ ["Software","Xcalibur · TraceFinder · FreeStyle · RStudio · ArcGIS · Google Earth Engine · OriginLab · The Unscrambler · IUCLID · CHESAR · EPISuite · AlphaFold"]];
 document.getElementById("sgrid").innerHTML=sk.map(g=>`<div><h3>${g[0]}</h3><div class="tags">${g[1].split(" · ").map(x=>`<span>${x}</span>`).join("")}</div></div>`).join("");
-const aw=[["2023 – 2025","Erasmus Mundus Scholarship, Joint Master's in Environmental Contamination and Toxicology (ECT+)"],["Oct 2022","First Place, Poster Presentation, ICEES 2022 International Conference on Ecotoxicology and Environmental Sciences"],["2018, 2020","Merit Scholarship for academic results, Khulna University"]];
+const aw=[["2023 – 2025","Erasmus Mundus Scholarship, Joint Master's in Environmental Contamination and Toxicology (ECT+)"],["Oct 2022","First Place, Poster Presentation, Bilateral International Conference on Ecotoxicology and Environmental Sciences (ICEES 2022)"],["2018, 2020","Merit Scholarship for academic results, Khulna University"]];
 document.getElementById("awards").innerHTML=aw.map(a=>`<li><span class="when">${a[0]}</span><span>${a[1]}</span></li>`).join("");
 }
 </script>
