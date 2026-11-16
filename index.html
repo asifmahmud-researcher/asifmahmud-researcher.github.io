@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Asif Mahmud · Research</title>
 <meta name="description" content="Asif Mahmud: environmental contamination and toxicology researcher. Research, publications and Erasmus Mundus journey.">
@@ -13,18 +14,17 @@
    PICTURE: a dotted-grid map with a drawn route from Khulna through Pau, Trondheim, the Basque Country, Paris and Poitiers
    COLOUR and TYPE: one beige ground throughout; every element a shade of green, from deep sage to light sage tint; Young Serif + Inter
    LAYOUT: green bar, beige hero with map, university cards, four green research cards, publications, journey, skills, green contact rows */
-:root{color-scheme:light dark;
+:root{color-scheme:light;
  --bg:light-dark(#f4ead2,#1b231c);--ink:light-dark(#2c3a2e,#efe6cf);--mute:light-dark(#556b4d,#bfc9ad);
  --g1:#2c3a2e;--g2:#3e513b;--g3:#556b4d;--g4:#6f8464;--g5:#8fa07d;--g6:#a3b18a;
  --tint:light-dark(#e2e5cc,#26332a);--tint2:light-dark(#d4dbbd,#2e3d31);--cream:#fff5e1;
  --line:light-dark(#d9d2b4,#34443a);--hi:light-dark(#556b4d,#a3b18a)}
-:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+:root[data-theme]{color-scheme:light}
 *{box-sizing:border-box;min-width:0}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
 h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.08;text-wrap:balance;margin:0}
 h2{font-size:clamp(30px,4vw,42px);margin-bottom:12px;color:var(--g2)}
-:root[data-theme=dark] h2{color:var(--g6)}
 a{color:inherit}
 .wrap{max-width:1240px;margin:0 auto}
 .band{padding:clamp(40px,6vw,80px) max(5vw,16px);border-top:1px solid var(--line)}
@@ -38,12 +38,10 @@ nav a:hover,nav a:focus-visible{background:rgba(255,245,225,.12);opacity:1;outli
 .hero{padding:clamp(28px,5vw,72px) max(5vw,16px) clamp(40px,6vw,72px)}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center}
 .hero h1{font-size:clamp(42px,6vw,66px);margin:6px 0 16px;color:var(--g1)}
-:root[data-theme=dark] .hero h1{color:var(--cream)}
 .role{font-size:18px;color:var(--g4);margin:0;font-weight:500}
 .hero p.bio{max-width:54ch;margin:0 0 26px}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:999px;font-weight:600;text-decoration:none;font-size:15px;background:var(--tint2);color:var(--g1);transition:transform .15s,background .15s}
-:root[data-theme=dark] .btn{color:var(--ink)}
 .btn:hover{transform:translateY(-2px);background:var(--g6)}
 .btn.solid{background:var(--g2);color:var(--cream)}
 .btn.solid:hover{background:var(--g1)}
@@ -59,7 +57,6 @@ nav a:hover,nav a:focus-visible{background:rgba(255,245,225,.12);opacity:1;outli
 .ugrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
 .uni{background:var(--tint);border-radius:14px;padding:14px 16px;border-left:4px solid var(--g6)}
 .uni b{display:block;font-family:"Young Serif",serif;font-weight:400;font-size:17px;line-height:1.25;color:var(--g1)}
-:root[data-theme=dark] .uni b{color:var(--ink)}
 .uni span{display:block;font-size:13.5px;color:var(--mute);margin-top:4px}
 .uni.now{background:var(--g2);border-left-color:var(--g6)}
 .uni.now b{color:var(--cream)}.uni.now span{color:#d4dbbd}
@@ -74,7 +71,6 @@ nav a:hover,nav a:focus-visible{background:rgba(255,245,225,.12);opacity:1;outli
 .stats{display:flex;flex-wrap:wrap;gap:12px 44px;margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
 .stats div{font-size:15px;color:var(--mute);max-width:22ch}
 .stats strong{display:block;font-family:"Young Serif",serif;font-weight:400;font-size:clamp(30px,4vw,40px);color:var(--g3);line-height:1.1}
-:root[data-theme=dark] .stats strong{color:var(--g6)}
 .tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:22px}
 .chip{min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--g5);background:transparent;color:var(--ink);font:500 15px Inter,sans-serif;cursor:pointer}
 .chip[aria-pressed=true]{background:var(--g2);border-color:var(--g2);color:var(--cream)}
@@ -83,7 +79,6 @@ nav a:hover,nav a:focus-visible{background:rgba(255,245,225,.12);opacity:1;outli
 .pub{display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:18px;align-items:start;background:var(--tint);border-radius:16px;padding:20px 22px}
 .yr{font-family:"Young Serif",serif;font-size:24px;color:var(--hi);white-space:nowrap}
 .pub h3{font-family:Inter,sans-serif;font-weight:600;font-size:17px;line-height:1.4;margin-bottom:6px;color:var(--g1)}
-:root[data-theme=dark] .pub h3{color:var(--ink)}
 .pub p{margin:0;font-size:15px;color:var(--mute)}
 .pub p b{color:var(--ink);font-weight:600}
 .tag{display:inline-block;font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--g4);color:var(--cream);white-space:nowrap}
@@ -97,7 +92,6 @@ nav a:hover,nav a:focus-visible{background:rgba(255,245,225,.12);opacity:1;outli
 .tl li.er::before{border-color:var(--g2);background:var(--g6)}
 .when{font-size:14px;font-weight:600;color:var(--hi);white-space:nowrap}
 .tl h3{font-size:22px;margin:4px 0 2px;color:var(--g1)}
-:root[data-theme=dark] .tl h3{color:var(--ink)}
 .where{font-size:15px;color:var(--mute);margin:0 0 6px}
 .tl p.d{margin:0;font-size:15.5px}
 .side .card{margin-top:24px;padding:22px;border-radius:16px;background:var(--g3);color:var(--cream)}
@@ -105,10 +99,8 @@ nav a:hover,nav a:focus-visible{background:rgba(255,245,225,.12);opacity:1;outli
 .side .card p{margin:0;color:#ece4cc;font-size:15.5px}
 .sgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}
 .sgrid h3{font-size:21px;margin-bottom:12px;color:var(--g2)}
-:root[data-theme=dark] .sgrid h3{color:var(--g6)}
 .tags{display:flex;flex-wrap:wrap;gap:8px}
 .tags span{font-size:14px;padding:5px 12px;border-radius:999px;background:var(--tint2);color:var(--g1)}
-:root[data-theme=dark] .tags span{color:var(--ink)}
 .awards{list-style:none;margin:40px 0 0;padding:28px 0 0;border-top:1px solid var(--line);display:grid;gap:14px}
 .awards li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px}
 .awards .when{white-space:nowrap}
