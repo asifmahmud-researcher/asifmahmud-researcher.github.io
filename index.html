@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asif Mahmud · Research</title>
+<meta name="description" content="Asif Mahmud: environmental contamination and toxicology researcher. Research, publications and Erasmus Mundus journey.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: warm, curious, scholarly — a young researcher's story told with care
+   IDEA: a travel journal / route map — the career as a journey between research cities
+   PICTURE: a dotted-grid map with a drawn route from Khulna through Pau, Trondheim, the Basque Country, Paris and Poitiers
+   COLOUR and TYPE: white ground, deep water-blue dominant, soft sky support, coral accent; Young Serif + Inter
+   LAYOUT: full-width blue hero with map, then calm bands: research, publications, journey, skills, contact */
+:root{color-scheme:light dark;
+ --bg:light-dark(#ffffff,#0d1330);--ink:light-dark(#141a33,#eef1ff);--mute:light-dark(#545b78,#a9b0d6);
+ --cob:light-dark(#1f3fbf,#2a47c9);--hi:light-dark(#1f3fbf,#9fb2ff);--sky:light-dark(#e8edff,#161f4a);--coral:#ff5a4e;
+ --line:light-dark(#dfe3f2,#26305e);--card:light-dark(#f6f8ff,#121a40)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.08;text-wrap:balance;margin:0}
+h2{font-size:clamp(30px,4vw,42px);margin-bottom:12px}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding:clamp(40px,6vw,88px) max(5vw,16px)}
+.lede{color:var(--mute);max-width:64ch;margin:0 0 32px}
+nav{position:sticky;top:0;z-index:5;background:var(--cob);color:#fff;padding:0 max(5vw,16px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;min-height:60px}
+nav b{font-family:"Young Serif",serif;font-weight:400;font-size:19px}
+nav ul{display:flex;flex-wrap:wrap;gap:4px;list-style:none;margin:0;padding:0}
+nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-size:15px;border-radius:8px;opacity:.9}
+nav a:hover,nav a:focus-visible{background:rgba(255,255,255,.14);opacity:1;outline:none}
+.hero{background:var(--cob);color:#fff;padding:clamp(28px,5vw,72px) max(5vw,16px) clamp(40px,6vw,80px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.hero h1{font-size:clamp(42px,6vw,66px);margin:6px 0 16px}
+.role{font-size:18px;color:#cfd8ff;margin:0}
+.hero p.bio{max-width:54ch;color:#e4e9ff;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:999px;font-weight:600;text-decoration:none;font-size:15px;border:2px solid #fff;transition:transform .15s}
+.btn.solid{background:var(--coral);border-color:var(--coral);color:#fff}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,button:focus-visible,input:focus-visible,.links a:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.map{background:rgba(255,255,255,.06);border-radius:22px;padding:8px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
+.map svg{display:block;width:100%;height:auto}
+.route{stroke-dasharray:6 7;animation:dash 1.6s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-26}}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(3);opacity:0}}
+@media (prefers-reduced-motion:reduce){.route,.pulse{animation:none}.btn{transition:none}}
+.grid3{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.unis{background:var(--sky);padding:28px max(5vw,16px)}
+.ugrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.uni{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.uni b{display:block;font-family:"Young Serif",serif;font-weight:400;font-size:17px;line-height:1.25}
+.uni span{display:block;font-size:13.5px;color:var(--mute);margin-top:4px}
+.uni.now{border:2px solid var(--coral)}
+@media(max-width:1100px){.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.ugrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:560px){.ugrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.topic{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.topic svg{width:46px;height:46px;margin-bottom:14px}
+.topic h3{font-size:22px;margin-bottom:8px}
+.topic p{margin:0;color:var(--mute);font-size:15.5px}
+.stats{display:flex;flex-wrap:wrap;gap:12px 44px;margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
+.stats div{font-size:15px;color:var(--mute);max-width:22ch}
+.stats strong{display:block;font-family:"Young Serif",serif;font-weight:400;font-size:clamp(30px,4vw,40px);color:var(--hi);line-height:1.1}
+.pubs{background:var(--sky)}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:22px}
+.chip{min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:500 15px Inter,sans-serif;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--cob);border-color:var(--cob);color:#fff}
+.search{flex:1 1 220px;max-width:340px;min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:16px Inter,sans-serif}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.pub{display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:18px;align-items:start;background:var(--bg);border-radius:16px;padding:20px 22px;border:1px solid var(--line)}
+.yr{font-family:"Young Serif",serif;font-size:24px;color:var(--hi);white-space:nowrap}
+.pub h3{font-family:Inter,sans-serif;font-weight:600;font-size:17px;line-height:1.4;margin-bottom:6px}
+.pub p{margin:0;font-size:15px;color:var(--mute)}
+.pub p b{color:var(--ink);font-weight:600}
+.tag{display:inline-block;font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--sky);color:var(--ink);white-space:nowrap}
+.tag.sub{background:var(--coral);color:#fff}
+.empty{padding:28px;text-align:center;color:var(--mute)}
+.journey .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,5vw,72px)}
+.tl{list-style:none;margin:0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:11px;top:8px;bottom:8px;border-left:2px dashed var(--cob);opacity:.5}
+.tl li{position:relative;padding:0 0 34px 46px}
+.tl li::before{content:"";position:absolute;left:3px;top:6px;width:18px;height:18px;border-radius:50%;background:var(--bg);border:4px solid var(--cob)}
+.tl li.er::before{border-color:var(--coral)}
+.when{font-size:14px;font-weight:600;color:var(--coral);white-space:nowrap}
+.tl h3{font-size:22px;margin:4px 0 2px}
+.where{font-size:15px;color:var(--mute);margin:0 0 6px}
+.tl p.d{margin:0;font-size:15.5px}
+.side .card{margin-top:24px;padding:22px;border-radius:16px;background:var(--card);border:1px solid var(--line)}
+.side .card strong{display:block;font-family:"Young Serif",serif;font-weight:400;font-size:21px;margin-bottom:6px}
+.side .card p{margin:0;color:var(--mute);font-size:15.5px}
+.skills{background:var(--card)}
+.sgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}
+.sgrid h3{font-size:21px;margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:14px;padding:5px 12px;border-radius:999px;background:var(--bg);border:1px solid var(--line)}
+.awards{list-style:none;margin:40px 0 0;padding:28px 0 0;border-top:1px solid var(--line);display:grid;gap:14px}
+.awards li{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px}
+.awards .when{white-space:nowrap}
+.contact{background:var(--cob);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center}
+.contact p{color:#dbe2ff;margin:0}
+.links{display:grid;gap:10px}
+.links a,.links div{display:flex;justify-content:space-between;gap:12px;align-items:center;min-height:52px;padding:0 20px;border-radius:14px;background:rgba(255,255,255,.1);text-decoration:none;font-weight:500}
+.links span{color:#cfd8ff;font-weight:400;font-size:15px;overflow-wrap:anywhere;text-align:right}
+.links div.addr{align-items:flex-start;padding:14px 20px}
+.links span br{display:block}
+.links a:hover{background:rgba(255,255,255,.18)}
+footer{padding:22px max(5vw,16px);font-size:14px;color:var(--mute);text-align:center}
+@media(max-width:900px){.grid3{grid-template-columns:minmax(0,1fr)}.journey .wrap,.contact .wrap,.sgrid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:760px){.hero .wrap{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){nav ul{display:none}.pub{grid-template-columns:minmax(0,1fr);gap:8px}.awards li{grid-template-columns:minmax(0,1fr);gap:2px}.links a,.links div{flex-direction:column;align-items:flex-start;justify-content:center;padding:10px 18px}.links span{text-align:left}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Asif Mahmud</b>
+<ul><li><a href="#research">Research</a></li><li><a href="#publications">Publications</a></li><li><a href="#journey">Journey</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap">
+ <div>
+  <p class="role">PhD candidate in water treatment · IC2MP, Université de Poitiers</p>
+  <h1>Asif Mahmud</h1>
+  <p class="bio">I study the contaminants hiding in our water, now focusing on rubber additives and the halogenated by-products they form in drinking water. Trained as a soil scientist in Bangladesh, I completed the Erasmus Mundus master's in Environmental Contamination and Toxicology (ECT+) across France, Norway and Spain.</p>
+  <div class="btns"><a class="btn solid" href="#publications">See my publications</a><a class="btn" href="https://scholar.google.com/citations?user=Tj9fo3UAAAAJ&amp;hl=en">Google Scholar</a><a class="btn" href="https://www.researchgate.net/profile/Asif-Mahmud-15">ResearchGate</a><a class="btn" href="https://www.linkedin.com/in/asif16ku/">LinkedIn</a></div>
+ </div>
+ <div class="map"><svg id="map" viewBox="0 0 600 420" role="img" aria-label="Route map of universities: Khulna University, UPPA, NTNU, UPV/EHU, CNRS Paris, Université de Poitiers"></svg></div>
+</div></header>
+
+<section class="unis" aria-label="Universities and institutes"><div class="wrap"><div class="ugrid" id="unis"></div></div></section>
+
+<section class="band" id="research"><div class="wrap">
+ <h2>Research focus</h2>
+ <p class="lede">My work combines analytical chemistry, molecular methods and spatial analysis to understand how contaminants move through water, soil and sediment, and what that means for ecosystems and public health.</p>
+ <div class="grid3" id="topics"></div>
+ <div class="stats" id="stats"></div>
+</div></section>
+
+<section class="band pubs" id="publications"><div class="wrap">
+ <h2>Publications</h2>
+ <p class="lede">Journal articles and conference abstracts. Filter by type, or search by title, co-author or venue. Full list and citations on <a href="https://scholar.google.com/citations?user=Tj9fo3UAAAAJ&amp;hl=en">Google Scholar</a> and <a href="https://www.researchgate.net/profile/Asif-Mahmud-15">ResearchGate</a>.</p>
+ <div class="tools" id="filters"><input class="search" id="q" type="search" placeholder="Search publications" aria-label="Search publications"></div>
+ <ul class="list" id="publist"></ul>
+</div></section>
+
+<section class="band journey" id="journey"><div class="wrap">
+ <div class="side">
+  <h2>My journey through Erasmus Mundus</h2>
+  <p class="lede">From soil science in Khulna to a PhD in Poitiers. Coral stops were part of the ECT+ joint master's.</p>
+  <div class="card"><strong>Erasmus Mundus scholar, 2023–2025</strong><p>Two years, four host institutions and three countries, with research placements at NTNU, UPV/EHU and CNRS along the way.</p></div>
+ </div>
+ <ol class="tl" id="tl"></ol>
+</div></section>
+
+<section class="band skills" id="skills"><div class="wrap">
+ <h2>Skills &amp; methods</h2>
+ <p class="lede">The lab techniques, models and tools I use day to day.</p>
+ <div class="sgrid" id="sgrid"></div>
+ <ul class="awards" id="awards"></ul>
+</div></section>
+
+<section class="band contact" id="contact"><div class="wrap">
+ <div><h2>Let's talk research</h2><p>I'm open to collaborations and conversations about rubber additives, emerging contaminants, wastewater-based epidemiology and water quality.</p></div>
+ <div class="links">
+  <a href="mailto:asif.mahmud@univ-poitiers.fr">Email<span>asif.mahmud@univ-poitiers.fr</span></a>
+  <a href="https://scholar.google.com/citations?user=Tj9fo3UAAAAJ&amp;hl=en">Google Scholar<span>Publications &amp; citations</span></a>
+  <a href="https://www.researchgate.net/profile/Asif-Mahmud-15">ResearchGate<span>Papers &amp; full texts</span></a>
+  <a href="https://www.linkedin.com/in/asif16ku/">LinkedIn<span>linkedin.com/in/asif16ku</span></a>
+  <div class="addr">Address<span>Doctorant en traitement des eaux<br>Institut de Chimie des Milieux et des Matériaux de Poitiers (IC2MP – UMR 7285)<br>Équipe E-BICOM, Bâtiment B1, Université de Poitiers</span></div>
+  <div>Languages<span>English: IELTS 6.5 · Duolingo 125/160</span></div>
+ </div>
+</div></section>
+<footer>© 2026 Asif Mahmud</footer>
+
+<script>
+{
+const P=(lon,lat)=>[30+(lon+8)*22.5,20+(65-lat)*15.8];
+const stops=[
+ {c:"Khulna University",p:[575,398],a:"end",dx:-4,dy:-14,off:1},
+ {c:"UPPA · Pau",p:P(-0.37,43.3),a:"start",dx:14,dy:6},
+ {c:"NTNU · Trondheim",p:P(10.4,63.43),a:"start",dx:14,dy:6},
+ {c:"UPV/EHU",p:P(-2.9,43.4),a:"end",dx:-14,dy:6},
+ {c:"CNRS · Paris",p:P(2.35,48.85),a:"start",dx:14,dy:6},
+ {c:"Univ. Poitiers",p:P(0.34,46.58),a:"end",dx:-14,dy:6}];
+let d=`M${stops[0].p}`;
+for(let i=1;i<stops.length;i++){const[a,b]=[stops[i-1].p,stops[i].p];const mx=(a[0]+b[0])/2,my=(a[1]+b[1])/2,nx=-(b[1]-a[1])*.22,ny=(b[0]-a[0])*.22;d+=` Q${mx+nx},${my+ny} ${b}`;}
+document.getElementById("map").innerHTML=`<defs><pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.4" fill="#fff" opacity=".2"/></pattern></defs>
+ <rect width="600" height="420" rx="16" fill="url(#dots)"/>
+ <path class="route" d="${d}" fill="none" stroke="#ff5a4e" stroke-width="3.5" stroke-linecap="round"/>
+ ${stops.map((s,i)=>{const[x,y]=s.p;return `${i===stops.length-1?`<circle class="pulse" cx="${x}" cy="${y}" r="8" fill="#ff5a4e"/>`:""}
+ <circle cx="${x}" cy="${y}" r="9" fill="#fff"/><circle cx="${x}" cy="${y}" r="4.5" fill="${i===stops.length-1?"#ff5a4e":"#1f3fbf"}"/>
+ <text x="${x+s.dx}" y="${y+s.dy}" text-anchor="${s.a}" fill="#fff" font-family="Inter,sans-serif" font-size="${s.off?14:17}" font-weight="600">${s.c}</text>`}).join("")}`;
+
+const un=[["Khulna University","Bangladesh · BSc & MSc"],["Université de Pau et des Pays de l'Adour","France · ECT+ semester 1"],["NTNU","Norway · ECT+ semester 2"],["UPV/EHU","Spain · ECT+ semester 3"],["CNRS · Metis, LSCE, Eau de Paris","France · M2 thesis"],["Université de Poitiers · IC2MP","France · PhD, now",1]];
+document.getElementById("unis").innerHTML=un.map(u=>`<div class="uni${u[2]?" now":""}"><b>${u[0]}</b><span>${u[1]}</span></div>`).join("");
+const ic={
+ tire:'<svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="22" fill="#14161a" opacity=".12"/><circle cx="23" cy="23" r="13" fill="none" stroke="#3a3f55" stroke-width="6" stroke-dasharray="4 2"/><circle cx="23" cy="23" r="5" fill="#ff5a4e"/></svg>',
+ lab:'<svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="22" fill="#1f3fbf" opacity=".15"/><path d="M19 11h8M20 11v9l-7 13a3 3 0 0 0 3 4h14a3 3 0 0 0 3-4l-7-13v-9" fill="none" stroke="#1f3fbf" stroke-width="2.6" stroke-linejoin="round"/><path d="M16 30h14l2 4H14z" fill="#1f3fbf"/></svg>',
+ virus:'<svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="22" fill="#ff5a4e" opacity=".15"/><circle cx="23" cy="23" r="7" fill="#ff5a4e"/><path d="M23 10v6M23 30v6M10 23h6M30 23h6M14 14l4 4M28 28l4 4M32 14l-4 4M18 28l-4 4" stroke="#ff5a4e" stroke-width="2.6" stroke-linecap="round"/></svg>',
+ drop:'<svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="22" fill="#1a9bb8" opacity=".18"/><path d="M23 10c6 8 10 13 10 18a10 10 0 0 1-20 0c0-5 4-10 10-18z" fill="#1a9bb8"/></svg>'};
+const topics=[
+ {i:"tire",t:"Rubber additives in drinking water",d:"My PhD: benzothiazoles, phenylguanidines, 6-PPD and 6-PPDQ, the halogenated derivatives chlorination forms, and human exposure, using LC-HRMS and non-targeted analysis."},
+ {i:"lab",t:"Emerging contaminants",d:"Measuring pharmaceuticals and personal care products in estuarine and urban sediments with UHPLC-q-Orbitrap and LC-MS/MS."},
+ {i:"virus",t:"Wastewater-based epidemiology",d:"Reading sewer sediment cores as archives of public health, from drug residues to SARS-CoV-2 RNA detected by digital RT-PCR."},
+ {i:"drop",t:"Water quality & trace elements",d:"Water quality indices, GIS mapping, arsenic in treatment sludge and manganese in seawater, from Bangladesh to Norway."}];
+document.getElementById("topics").innerHTML=topics.map(t=>`<div class="topic">${ic[t.i]}<h3>${t.t}</h3><p>${t.d}</p></div>`).join("");
+
+const st=[["4","journal articles"],["5","conference abstracts"],["5","countries of study and research"],["1st","place poster award, ICEES 2022"]];
+document.getElementById("stats").innerHTML=st.map(s=>`<div><strong>${s[0]}</strong>${s[1]}</div>`).join("");
+
+const me=s=>s.replace(/Mahmud, A\./g,"<b>Mahmud, A.</b>");
+const pubs=[
+ {y:2026,t:"Urban sewer sediments enable retrospective wastewater-based epidemiology",a:"Thiebault, T., Wurtzer, S., Mahmud, A., Alliot, F., Bernier-Turpin, G., Asselin, C., Le Callonnec, L., Le Milbeau, C., Moulin, L., & Jacob, J.",v:"Environmental Science & Technology Letters",k:"Article"},
+ {y:2022,t:"Are the vegetables grown in the soil of municipal solid waste dumping sites safe for human health? An assessment from trace elements contamination and associated health risks",a:"Halder, M., Rahman, T., Mahmud, A., Jim, S. A., Akbor, M. A., Siddique, M. A. B., & Joardar, J. C.",v:"Environmental Nanotechnology, Monitoring & Management, 18, 100731",k:"Article"},
+ {y:2021,t:"Influence of municipal solid waste compost on yield of tomato, applied solely and in combination with inorganic fertilizer where nitrogen is the only variable factor",a:"Salam, A. A., Ashrafuzzaman, M., Sikder, S., Mahmud, A., & Joardar, J. C.",v:"Malaysian Journal of Sustainable Agriculture, 5(1), 29–33",k:"Article"},
+ {y:2020,t:"Assessment of groundwater quality in Khulna city of Bangladesh in terms of water quality index for drinking purpose",a:"Mahmud, A., Sikder, S., & Joardar, J. C.",v:"Applied Water Science, 10(11), 1–14",k:"Article"},
+ {y:2026,t:"Potential of settling basins to record quantitative information about public health: History of Paris since 2018",a:"Thiebault, T., Mahmud, A., Wurtzer, S., Le Milbeau, C., Alliot, F., Le Callonnec, L., Moulin, L., & Jacob, J.",v:"SETAC Europe 36th Annual Meeting",k:"Conference"},
+ {y:2025,t:"Removal of pharmaceuticals, consumer products and pesticides in a wastewater treatment plant in southern Madrid: A case study",a:"González-Gaya, B., Mahmud, A., Kalman, J., Dorado, I., & Valcárcel, Y.",v:"ICRAPHE 2025, Aveiro, Portugal",k:"Conference"},
+ {y:2022,t:"Geospatial mapping approach and determination of the water quality index (WQI) for irrigation purposes in Dacope Upazila, Khulna, Bangladesh",a:"Mahmud, A., Arobe, S., Biswas, S., & Joardar, J. C.",v:"ICEES 2022, Bangladesh · First-place poster",k:"Conference"},
+ {y:2022,t:"Eco-friendly disposal of arsenic-containing sludge (JaPani) used for water treatment plant",a:"Joardar, J. C., Zaman, S. S., Mahmud, A., & Arobe, S.",v:"ICEES 2022, Bangladesh",k:"Conference"},
+ {y:2020,t:"Assessment of drinking water quality in terms of water quality index based on GIS in Khulna city, Bangladesh",a:"Mahmud, A., Sikder, S., & Joardar, J. C.",v:"ICRAC 2020, Bangladesh",k:"Conference"}];
+const kinds=[["All","All"],["Article","Journal articles"],["Conference","Conference abstracts"]];let kind="All";
+const f=document.getElementById("filters"),q=document.getElementById("q"),list=document.getElementById("publist");
+f.insertAdjacentHTML("afterbegin",kinds.map(k=>`<button class="chip" type="button" data-k="${k[0]}" aria-pressed="${k[0]==="All"}">${k[1]}</button>`).join(""));
+const render=()=>{const s=q.value.trim().toLowerCase();
+ const r=pubs.filter(p=>(kind==="All"||p.k===kind)&&(!s||(p.t+p.a+p.v).toLowerCase().includes(s)));
+ list.innerHTML=r.length?r.map(p=>`<li class="pub"><span class="yr">${p.y}</span><div><h3>${p.t}</h3><p>${me(p.a)}<br><em>${p.v}</em></p></div><div>${p.s?`<span class="tag sub">${p.s}</span>`:`<span class="tag">${p.k==="Article"?"Journal":"Conference"}</span>`}</div></li>`).join(""):`<li class="empty">No publications match that search.</li>`;};
+f.addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;kind=b.dataset.k;f.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c===b));render();});
+q.addEventListener("input",render);render();
+
+const tl=[
+ {w:"2016 – 2022",t:"BSc & MSc in Soil Science",p:"Khulna University, Bangladesh",d:"Six years of soil and water science, with research on groundwater quality, irrigation water in coastal Dacope and trace elements in food crops."},
+ {w:"2021 – 2022",t:"Research assistant",p:"Khulna University · JDC Corporation, Japan",d:"Mapped irrigation water quality with IDW interpolation, and developed a safe disposal method for arsenic-laden sludge, testing arsenic by AAS and the strength of blocks made from it."},
+ {w:"Sep 2023 · Semester 1",t:"Erasmus Mundus ECT+ begins",p:"Université de Pau et des Pays de l'Adour, France",d:"The start of the joint master's in Environmental Contamination and Toxicology.",e:1},
+ {w:"2024 · Semester 2",t:"Trondheim, Norway",p:"Norwegian University of Science and Technology (NTNU)",d:"Followed by a summer internship developing a flow-injection chemiluminescence (FIA-CL) method to measure manganese in seawater.",e:1},
+ {w:"Sep – Dec 2024 · Semester 3",t:"Basque Country, Spain",p:"University of the Basque Country (UPV/EHU), Plentzia Marine Station",d:"Analysed contaminants of emerging concern in sediments of three Bay of Biscay estuaries affected by wastewater treatment plants.",e:1},
+ {w:"Jan – Jun 2025 · Semester 4",t:"M2 thesis in Paris, France",p:"CNRS · UMR Metis 7619, LSCE, Eau de Paris",d:"Reconstructed past deposition in a sediment core from the Marceau-Courcelles desilting basin, tracing drug residues by LC-MS/MS and viral RNA by digital RT-PCR.",e:1},
+ {w:"Oct 2026 – present",t:"PhD in Poitiers, France",p:"Université de Poitiers · IC2MP (E-BiCom/EBI & EES teams) · ED Rosalind Franklin 649",d:"Thesis: Rubber additives and their halogenated derivatives in drinking water and biological matrices. Supervised by Hervé Gallard and Pascal Carato, within the ANSES-funded HEVEA project."}];
+document.getElementById("tl").innerHTML=tl.map(i=>`<li class="${i.e?"er":""}"><span class="when">${i.w}</span><h3>${i.t}</h3><p class="where">${i.p}</p><p class="d">${i.d}</p></li>`).join("");
+
+const sk=[
+ ["Analytical & laboratory","PLE · UAE · SPE · UHPLC-Q-Orbitrap · LC-MS/MS · GC-MS · AAS · FIA-CL · Digital RT-PCR · DNA extraction · SDS-PAGE · Western blotting · Bradford assay · Immunoassays"],
+ ["Data analysis & modelling","Water Quality Index · EC50 / LC50 · Dose-response modelling · Ecotoxicological interpretation · Predictive modelling · Remote sensing · Satellite image analysis"],
+ ["Statistics & machine learning","GLM · PCA · ANOVA · Regression · Random Forest · Neural networks"],
+ ["Software","RStudio · ArcGIS · Google Earth Engine · OriginLab · The Unscrambler · IUCLID · CHESAR · EPISuite · AlphaFold"]];
+document.getElementById("sgrid").innerHTML=sk.map(g=>`<div><h3>${g[0]}</h3><div class="tags">${g[1].split(" · ").map(x=>`<span>${x}</span>`).join("")}</div></div>`).join("");
+const aw=[["2023 – 2025","Erasmus Mundus Scholarship, Joint Master's in Environmental Contamination and Toxicology (ECT+)"],["Oct 2022","First Place, Poster Presentation, ICEES 2022 International Conference on Ecotoxicology and Environmental Sciences"],["2018, 2020","Merit Scholarship for academic results, Khulna University"]];
+document.getElementById("awards").innerHTML=aw.map(a=>`<li><span class="when">${a[0]}</span><span>${a[1]}</span></li>`).join("");
+}
+</script>
+</body>
+</html>
